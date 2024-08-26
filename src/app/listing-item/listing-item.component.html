@@ -1,0 +1,35 @@
+<div class="row">
+  @for(card of items ; track $index){
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <div class="card-img-container">
+        <img
+          class="card-img-top"
+          [src]="card.display_img_url ? card.display_img_url : genericImageUrl"
+          alt="Card image cap"
+        />
+        @if(card.quantity === 0 || (card.quantity <= card.low_quantity)){
+        <div class="overlay">
+          @if (card.quantity === 0){
+          <span class="overlay-text">Out of Stock</span>
+          } @else if(card.quantity <= card.low_quantity){
+          <span class="overlay-text">On High Demand</span>
+          <span class="overlay-text">(Only {{card.quantity}} items left)</span>
+          }
+        </div>
+        }
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ card.name }}</p>
+        <p class="card-text">{{ card.points }} Points</p>
+        <p class="card-text">
+          Valid Until :
+          {{
+            card.valid_until ? (card.valid_until | date : "d-MM-YYYY") : "--"
+          }}
+        </p>
+      </div>
+    </div>
+  </div>
+  }
+</div>

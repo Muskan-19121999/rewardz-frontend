@@ -1,0 +1,26 @@
+<div
+  class="container container-def"
+  style="background-color: rgb(221, 221, 221)"
+>
+  <div>Search</div>
+  <div><input type="text" placeholder="Search" /></div>
+  <div>Applied Filters</div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="categories">
+        <h2>Categories</h2>
+        <ul>
+          @for(category of categories;track $index){
+          <li>
+            <input type="checkbox" />
+            {{ category.name }}
+          </li>
+          }
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <app-listing-item></app-listing-item>
+    </div>
+  </div>
+</div>
