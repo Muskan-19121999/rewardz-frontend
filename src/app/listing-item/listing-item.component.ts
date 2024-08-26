@@ -13,18 +13,18 @@ export class ListingItemComponent {
   items: Item[] = [
     {
       pk: 987,
-      name: 'Caffe Coffee Day',
+      name: 'Zomato',
       points: 150,
-      display_img_url: '/assets/rewards-logos/ccd-logo.png',
+      display_img_url: '/assets/rewards-logos/zomato-logo.jpg',
       quantity: 2,
       valid_until: '2024-12-31T00:00:00',
       low_quantity: 5,
     },
     {
       pk: 988,
-      name: 'Zomato',
+      name: 'CCD',
       points: 200,
-      display_img_url: '/assets/rewards-logos/zomato-logo.jpg',
+      display_img_url: '/assets/rewards-logos/ccd-logo.png',
       quantity: 30,
       valid_until: '2025-01-31T00:00:00',
       low_quantity: 10,
