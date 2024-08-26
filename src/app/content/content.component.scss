@@ -1,21 +1,5 @@
-/* Ensure the container takes full height of its parent if needed */
 .container-def {
   min-height: 350px;
   max-height: 600px;
   overflow-y: scroll;
 }
-
-// /* Fixed height for the card container with vertical scroll */
-// .card-container {
-//   height: 600px; /* Fixed height */
-//   overflow-y: auto; /* Enable vertical scrolling */
-//   padding: 1rem; /* Optional padding */
-//   background-color: #fff; /* Optional background color */
-// }
-
-// /* Optional: Style the card for better appearance */
-// .card {
-//   border: 1px solid #ddd;
-//   border-radius: 0.25rem;
-//   margin-bottom: 1rem; /* Spacing between cards */
-// }
